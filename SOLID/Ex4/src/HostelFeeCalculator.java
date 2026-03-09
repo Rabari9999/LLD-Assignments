@@ -2,7 +2,7 @@ import java.util.*;
 
 public class HostelFeeCalculator {
     private final FakeBookingRepo repo;
-
+    // private final 
     public HostelFeeCalculator(FakeBookingRepo repo) { this.repo = repo; }
 
     // OCP violation: switch + add-on branching + printing + persistence.
@@ -18,12 +18,13 @@ public class HostelFeeCalculator {
 
     private Money calculateMonthly(BookingRequest req) {
         double base;
-        switch (req.roomType) {
-            case LegacyRoomTypes.SINGLE -> base = 14000.0;
-            case LegacyRoomTypes.DOUBLE -> base = 15000.0;
-            case LegacyRoomTypes.TRIPLE -> base = 12000.0;
-            default -> base = 16000.0;
-        }
+        // switch (req.roomType) {
+        //     case LegacyRoomTypes.SINGLE -> base = 14000.0;
+        //     case LegacyRoomTypes.DOUBLE -> base = 15000.0;
+        //     case LegacyRoomTypes.TRIPLE -> base = 12000.0;
+        //     default -> base = 16000.0;
+        // }
+
 
         double add = 0.0;
         for (AddOn a : req.addOns) {

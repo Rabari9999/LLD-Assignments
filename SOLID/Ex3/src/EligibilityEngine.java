@@ -29,6 +29,7 @@ public class EligibilityEngine {
 
 
         // // OCP violation: long chain for each rule
+        
         // if (s.disciplinaryFlag != LegacyFlags.NONE) {
         //     status = "NOT_ELIGIBLE";
         //     reasons.add("disciplinary flag present");
@@ -42,6 +43,7 @@ public class EligibilityEngine {
         //     status = "NOT_ELIGIBLE";
         //     reasons.add("credits below 20");
         // }
+
         if(!reasons.isEmpty()){
             status = "NON_ELIGIBLE";
         }
