@@ -66,7 +66,6 @@ public class MetricsRegistry implements Serializable {
         return Collections.unmodifiableMap(new HashMap<>(counters));
     }
 
-    // TODO: implement readResolve() to preserve singleton on deserialization
     protected Object readResolve()
     {
         return INSTANCE;
