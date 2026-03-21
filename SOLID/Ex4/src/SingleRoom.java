@@ -4,4 +4,9 @@ public class SingleRoom implements RoomType{
     {
         return 14000.0;
     }
+    @Override
+    public String toString()
+    {
+        return "SingleRoom";
+    }
 }

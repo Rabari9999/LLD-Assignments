@@ -3,4 +3,9 @@ public class Mess implements AddOns{
     {
         return 1000.0;
     }
+    @Override
+    public String toString()
+    {
+        return "Mess";
+    }
 }

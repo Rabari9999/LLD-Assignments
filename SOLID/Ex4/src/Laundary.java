@@ -3,4 +3,9 @@ public class Laundary implements AddOns {
     {
         return 500.0;
     }
+    @Override
+    public String toString()
+    {
+        return "Laundary";
+    }
 }

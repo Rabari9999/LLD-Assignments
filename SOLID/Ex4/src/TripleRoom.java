@@ -3,4 +3,9 @@ public class TripleRoom implements RoomType{
     {
         return 12000.0;
     }
+    @Override
+    public String toString()
+    {
+        return "TripleRoom";
+    }
 }
