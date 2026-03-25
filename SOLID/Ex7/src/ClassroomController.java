@@ -11,7 +11,7 @@ public class ClassroomController {
         SmartClassroomDevice lights = reg.getFirstOfType("LightsPanel");
         lights.setBrightness(60);
 
-        SmartClassroomDevice ac = reg.getFirstOfType("AirConditioner");
+        IairConditioner ac = reg.getFirstOfType("AirConditioner");
         ac.setTemperatureC(24);
 
         SmartClassroomDevice scan = reg.getFirstOfType("AttendanceScanner");
